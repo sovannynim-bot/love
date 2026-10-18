@@ -1,0 +1,92 @@
+<!-- របារម៉ឺនុយខាងលើ -->
+<header>
+    <link rel="stylesheet" href="style.css">
+    <div class="logo">SOVANNYSmartPhone Store</div>
+    <nav>
+        <ul>
+            <li><a href="#" class="active">ទំព័រដើម</a></li>
+            <li><a href="#">ផលិតផល</a></li>
+            <!-- កន្ត្រកទំនិញចាប់ផ្តើមពីលេខ 0 -->
+            <li class="cart-menu"><a href="#">🛒 កន្ត្រកទិញអីវ៉ាន់: <span id="cart-count">0</span></a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- Banner ស្វាគមន៍ -->
+<section class="hero-section">
+    <h1>ស្វាគមន៍មកកាន់ហាងទូរស័ព្ទដៃយើងខ្ញុំ</h1>
+    <p>មានលក់ទូរស័ព្ទស្មាតហ្វូនគ្រប់ម៉ូដែលថ្មីៗ ធានាគុណភាព និងតម្លៃល្អបំផុត</p>
+</section>
+
+<!-- ផ្នែកទំនិញសម្រាប់លក់ -->
+<main class="container">
+    <h2>ទូរស័ព្ទមកដល់ថ្មី និងពេញនិយម</h2>
+    
+    <div class="product-grid">
+        <!-- ផលិតផលទី ១ -->
+        <div class="product-card">
+            <div class="product-image">
+                <!-- បងអាចដូរកន្លែង src="..." ទៅជា Link រូបភាពទូរស័ព្ទរបស់បងបាន -->
+                <img src="images (18).jpg" alt="iPhone 18 Pro Max">
+            </div>
+            <div class="product-info">
+                <h3>iPhone 18 Pro Max (560GB)</h3>
+                <p class="price">$2,199.00</p>
+                <button class="btn-add" onclick="addToCart()">ថែមចូលកន្ត្រក</button>
+            </div>
+        </div>
+
+        <!-- ផលិតផលទី ២ -->
+        <div class="product-card">
+            <div class="product-image">
+                <img src="samsung.webp">
+            </div>
+            <div class="product-info">
+                <h3>Samsung Galaxy S26 Ultra</h3>
+                <p class="price">$1,099.00</p>
+                <button class="btn-add" onclick="addToCart()">ថែមចូលកន្ត្រក</button>
+            </div>
+        </div>
+
+        <!-- ផលិតផលទី ៣ -->
+        <div class="product-card">
+            <div class="product-image">
+                <img src="images.jpg" alt="Wireless Earbuds">
+            </div>
+            <div class="product-info">
+                <h3>កាសប្ល៊ូធូស Wireless Earbuds</h3>
+                <p class="price">$49.00</p>
+                <button class="btn-add" onclick="addToCart()">ថែមចូលកន្ត្រក</button>
+            </div>
+        </div>
+        <!-- ផលិតផលទី ៤ (Oppo) -->
+<div class="product-card">
+    <div class="product-image">
+        <img src="oppo.jpg" alt="Oppo Phone">
+    </div>
+    <div class="product-info">
+        <h3>Oppo Find X8 Pro (512GB)</h3>
+        <p class="price">$899.00</p>
+        <button class="btn-add" onclick="addToCart()">ដាក់ក្នុងកន្ត្រក</button>
+    </div>
+</div>
+<!-- ផលិតផលទី ៥ (Vivo) -->
+<div class="product-card">
+    <div class="product-image">
+        <img src="vivo.jpg" alt="Vivo Phone">
+    </div>
+    <div class="product-info">
+        <h3>Vivo X200 Pro (512GB)</h3>
+        <p class="price">$799.00</p>
+        <button class="btn-add" onclick="addToCart()">ដាក់ក្នុងកន្ត្រក</button>
+    </div>
+</div>
+    </div>
+</main>
+
+<footer>
+    <p>&copy; 2026 រក្សាសិទ្ធិគ្រប់យ៉ាងដោយ SOVANNYSmartPhone Store</p>
+</footer>
+
+<!-- ភ្ជាប់ទៅកាន់ File JavaScript -->
+<script src="script.js"></script>

@@ -1,0 +1,28 @@
+
+/* កំណត់ទម្រង់ទូទៅ */
+{ margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, 'Khmer OS Battambang'; }
+body { background-color: #f8f9fa; color: #333; }
+/* ម៉ឺនុយ Header */ header { background-color: #1e293b; color: white; display: flex; justify-content: space-between; align-items: center; padding: 15px 8%; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+header .logo { font-size: 22px; font-weight: bold; color: #38bdf8; }
+header nav ul { list-style: none; display: flex; align-items: center; }
+header nav ul li { margin-left: 20px; }
+header nav ul li a { color: #cbd5e1; text-decoration: none; font-size: 16px; transition: 0.3s; }
+header nav ul li a:hover, header nav ul li a.active { color: white; font-weight: bold; }
+.cart-menu a { background-color: #0284c7; padding: 8px 16px; border-radius: 20px; color: white !important; }
+/* Banner ខាងលើ */ .hero-section { background: linear-gradient(rgba(15, 23, 42, 0.8), rgba(15, 23, 42, 0.8)), url('https://unsplash.com') no-repeat center center/cover; color: white; text-align: center; padding: 80px 20px; }
+.hero-section h1 { font-size: 32px; margin-bottom: 12px; }
+.hero-section p { color: #94a3b8; font-size: 16px; }
+/* ផ្នែក Layout ដាក់ទំនិញ */ .container { max-width: 1200px; margin: 40px auto; padding: 0 20px; }
+.container h2 { font-size: 24px; margin-bottom: 30px; border-left: 5px solid #0284c7; padding-left: 12px; }
+/* រៀបចំប្រអប់ដេញជាជួរ (Grid) */ .product-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; }
+/* រចនាប្រអប់ផលិតផល */ .product-card { background-color: white; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05), 0 2px 4px -1px rgba(0,0,0,0.03); transition: transform 0.3s, box-shadow 0.3s; border: 1px solid #e2e8f0; }
+.product-card:hover { transform: translateY(-5px); box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1); }
+/* រចនារូបភាពផលិតផលឱ្យស្អាត ប៉ុនៗគ្នា */ .product-image { background-color: #f8fafc; height: 220px; display: flex; align-items: center; justify-content: center; overflow: hidden; }
+.product-image img { width: 100%; height: 100%; object-fit: cover; /* ធ្វើឱ្យរូបភាពមិនទាញខូចរាង */ transition: 0.3s; }
+.product-card:hover .product-image img { transform: scale(1.05); /* រូបភាពរីកធំបន្តិចពេលដាក់ម៉ៅពីលើ */ }
+.product-info { padding: 20px; }
+.product-info h3 { font-size: 18px; margin-bottom: 8px; color: #1e293b; height: 50px; /* កំណត់កម្ពស់អក្សរឱ្យស្មើគ្នា */ display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+.product-info .price { font-size: 22px; font-weight: bold; color: #ef4444; margin-bottom: 15px; }
+/* ប៊ូតុង */ .btn-add { width: 100%; padding: 12px; background-color: #0284c7; color: white; border: none; border-radius: 8px; font-size: 15px; cursor: pointer; font-weight: bold; transition: 0.2s; }
+.btn-add:hover { background-color: #0369a1; }
+/* Footer */ footer { text-align: center; padding: 25px; background-color: #1e293b; color: #94a3b8; margin-top: 60px; }
